@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Friend.</strong>
+                        <p>
+                            “A single rose can be my garden…a single friend can be my happiness.” and its u obviously in my life u had always been a great and a caring person 
+                            there are some situtaions where we could fight and do not speak up for weeks but does't mean at all because i always thrives for ur time .
+                            its gonna be hard but i wish u to always keep the smile on ur face and never forget abt me because i will always be there waiting for u and u don't
+                            even hesitate to speak and one last thing never ever be sad in any of the situations and always try to share them up and try to deviate.
+                            Always be happy and keep smilimg my friend
+                        </p>
+                        <div class="ending">
+                             your 
+                             varshu
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
